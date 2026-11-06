@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Дентомир+ — клиника здоровья и красоты</title>
+  <meta name="description" content="Дентомир+ — стоматология и косметология в Москве. Акции, рассрочка, ведущие врачи, современные интерьеры.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- SVG-спрайт: логотип и иконки -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <symbol id="i-logo" viewBox="28 0 164 96">
+    <circle cx="145" cy="51" r="44" fill="none" stroke="currentColor" stroke-width="1.4"/>
+    <circle cx="150" cy="15" r="10" fill="none" stroke="currentColor" stroke-width="1.4"/>
+    <text x="30" y="60" font-family="Montserrat, Arial, sans-serif" font-weight="300" font-size="20" letter-spacing="2.5" fill="currentColor">ДЕНТОМИР</text>
+    <path d="M161 56h14M168 49v14" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+    <path d="M30 65h127" fill="none" stroke="currentColor" stroke-width="1"/>
+    <text x="46" y="76" font-family="Montserrat, Arial, sans-serif" font-weight="500" font-size="7.4" fill="currentColor">Клиника здоровья и красоты</text>
+  </symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24">
+    <path d="M4 12h15M12.5 5.5 19 12l-6.5 6.5" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+  </symbol>
+  <symbol id="i-vk" viewBox="60 150 330 215">
+    <path fill="currentColor" d="M75.6 168.267H126.747C128.427 253.76 166.133 289.973 196 297.44V168.267H244.16V242C273.653 238.827 304.64 205.227 315.093 168.267H363.253C355.227 213.813 321.627 247.413 297.733 261.227C321.627 272.427 359.893 301.733 374.453 354.88H321.44C310.053 319.413 281.68 291.973 244.16 288.24V354.88H238.373C136.267 354.88 78.0267 284.853 75.6 168.267Z"/>
+  </symbol>
+  <symbol id="i-tg" viewBox="0 0 24 24">
+    <path d="M15 10l-4 4 6 6 4-16-18 7 4 2 2 6 3-4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </symbol>
+</svg>
+
+<header class="header">
+  <div class="container header__inner">
+    <a href="#top" class="logo" aria-label="Дентомир+ — на главную">
+      <svg class="logo__svg"><use href="#i-logo"/></svg>
+    </a>
+
+    <nav class="nav" id="nav" aria-label="Основное меню">
+      <a class="nav__link" href="#doctors">Врачи</a>
+      <a class="nav__link" href="#about">О клинике</a>
+      <a class="nav__link" href="#promos">Рассрочка</a>
+      <a class="nav__link" href="#works">Наши работы</a>
+      <a class="nav__link" href="#reviews">Отзывы</a>
+      <a class="nav__link" href="#prices">Стоимость</a>
+      <a class="nav__link" href="#blog">Блог и статьи</a>
+    </nav>
+
+    <a href="#contacts" class="btn btn--primary header__btn">Записаться</a>
+
+    <button class="burger" id="burger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="nav">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="top">
+  <h1 class="visually-hidden">Дентомир+ — клиника здоровья и красоты</h1>
+
+  <!-- ХИРО -->
+  <section class="hero">
+    <div class="container hero__grid">
+      <article class="hero-card hero-card--dental">
+        <img class="hero-card__img" src="img/hero-dental.jpg" alt="Стоматологическая клиника Дентомир+">
+        <div class="hero-card__glass">
+          <p class="hero-card__title">dental<br>clinic</p>
+          <a href="#doctors" class="btn btn--white hero-card__btn">Перейти</a>
+        </div>
+      </article>
+
+      <article class="hero-card hero-card--cosmo">
+        <img class="hero-card__img" src="img/hero-cosmetology.jpg" alt="Косметологическая клиника Дентомир+">
+        <div class="hero-card__glass">
+          <p class="hero-card__title">cosmetology<br>clinic</p>
+          <a href="#promos" class="btn btn--white hero-card__btn">Перейти</a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- АКЦИИ -->
+  <section class="promos" id="promos">
+    <div class="container">
+      <h2 class="section-title promos__title">Акции и выгодные предложения</h2>
+
+      <div class="promos__row promos__row--2">
+        <a class="promo" href="#">
+          <div class="promo__media"><img src="img/promo-mad.jpg" alt=""></div>
+          <span class="promo__arrow"><svg><use href="#i-arrow"/></svg></span>
+          <div class="promo__caption">Уход за кожей лица на премиум косметике MAD</div>
+        </a>
+        <a class="promo" href="#">
+          <div class="promo__media"><img src="img/promo-tooth.jpg" alt=""></div>
+          <span class="promo__arrow"><svg><use href="#i-arrow"/></svg></span>
+          <div class="promo__caption">Новый зуб "под ключ"</div>
+        </a>
+      </div>
+
+      <div class="promos__row promos__row--3">
+        <a class="promo" href="#">
+          <div class="promo__media"><img src="img/promo-airflow.jpg" alt=""></div>
+          <span class="promo__arrow"><svg><use href="#i-arrow"/></svg></span>
+          <div class="promo__caption">Профессиональная гигиена</div>
+        </a>
+        <a class="promo" href="#">
+          <div class="promo__media"><img src="img/promo-gift.jpg" alt=""></div>
+          <span class="promo__arrow"><svg><use href="#i-arrow"/></svg></span>
+          <div class="promo__caption">Подарочные сертификаты по любому поводу</div>
+        </a>
+        <a class="promo promo--price" href="#" id="prices">
+          <span class="promo__arrow"><svg><use href="#i-arrow"/></svg></span>
+          <div class="promo__caption">Полный прайс</div>
+        </a>
+      </div>
+
+      <div class="promos__row promos__row--2 promos__row--tall">
+        <a class="promo" href="#">
+          <div class="promo__media"><img src="img/promo-installment.jpg" alt=""></div>
+          <span class="promo__arrow"><svg><use href="#i-arrow"/></svg></span>
+          <div class="promo__caption">Рассрочка на лечение и протезирование зубов</div>
+        </a>
+        <a class="promo" href="#">
+          <div class="promo__media"><img src="img/promo-cosmo-day.jpg" alt=""></div>
+          <span class="promo__arrow"><svg><use href="#i-arrow"/></svg></span>
+          <div class="promo__caption">Клиентский день в косметологии</div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ИНТЕРЬЕРЫ -->
+  <section class="interiors" id="about">
+    <div class="container">
+      <h2 class="section-title section-title--center interiors__title">Обновлённые интерьеры для&nbsp;вашего комфорта</h2>
+    </div>
+
+    <div class="interiors__track" id="interiorsTrack">
+      <div class="interiors__item"><img src="img/interior-1.jpg" alt="Коридор клиники"></div>
+      <div class="interiors__item"><img src="img/interior-2.jpg" alt="Санузел"></div>
+      <div class="interiors__item"><img src="img/interior-3.jpg" alt="Зона ожидания"></div>
+      <div class="interiors__item"><img src="img/interior-4.jpg" alt="Кабинет"></div>
+      <div class="interiors__item"><img src="img/interior-5.jpg" alt="Косметологический кабинет"></div>
+    </div>
+
+    <div class="container">
+      <div class="carousel-nav">
+        <button class="arrow" type="button" data-interiors-prev aria-label="Предыдущее фото">&lt;</button>
+        <button class="arrow" type="button" data-interiors-next aria-label="Следующее фото">&gt;</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ВРАЧИ -->
+  <section class="doctors" id="doctors">
+    <div class="container">
+      <h2 class="section-title">Ведущие врачи</h2>
+      <p class="doctors__text">Попасть в нашу команду могут только лучшие практикующие специалисты. Наши врачи помогают сохранить здоровье на долгие годы и находят подход к любым пациентам.</p>
+
+      <div class="doctors__viewport" id="doctorsViewport">
+        <div class="doctors__track" id="doctorsTrack">
+          <article class="doc-card">
+            <div class="doc-card__photo"><img src="img/doc-1.jpg" alt="Татьяна Тушина"></div>
+            <h3 class="doc-card__name">Татьяна Тушина</h3>
+            <p class="doc-card__role">Главный врач<br>Кандидат медицинских наук<br>Стоматолог-ортопед, хирург, терапевт</p>
+            <a href="#" class="btn btn--primary doc-card__btn">Узнать подробнее</a>
+          </article>
+          <article class="doc-card">
+            <div class="doc-card__photo"><img src="img/doc-2.jpg" alt="Виталий Маслянко"></div>
+            <h3 class="doc-card__name">Виталий Маслянко</h3>
+            <p class="doc-card__role">Стоматолог-ортопед, хирург-имплантолог, стоматолог-терапевт</p>
+            <a href="#" class="btn btn--primary doc-card__btn">Узнать подробнее</a>
+          </article>
+          <article class="doc-card">
+            <div class="doc-card__photo"><img src="img/doc-3.jpg" alt="Валентина Никишкина"></div>
+            <h3 class="doc-card__name">Валентина Никишкина</h3>
+            <p class="doc-card__role">Стоматолог-ортопед, хирург-имплантолог, стоматолог-терапевт</p>
+            <a href="#" class="btn btn--primary doc-card__btn">Узнать подробнее</a>
+          </article>
+          <article class="doc-card">
+            <div class="doc-card__photo"><img src="img/doc-4.jpg" alt="Михаил Гречишников"></div>
+            <h3 class="doc-card__name">Михаил Гречишников</h3>
+            <p class="doc-card__role">Врач флеболог, пластический хирург, косметолог</p>
+            <a href="#" class="btn btn--primary doc-card__btn">Узнать подробнее</a>
+          </article>
+          <article class="doc-card">
+            <div class="doc-card__photo"><img src="img/doc-5.jpg" alt="Юлия Максимова"></div>
+            <h3 class="doc-card__name">Юлия Максимова</h3>
+            <p class="doc-card__role">Стоматолог-ортодонт, гнатолог</p>
+            <a href="#" class="btn btn--primary doc-card__btn">Узнать подробнее</a>
+          </article>
+        </div>
+      </div>
+
+      <div class="carousel-nav">
+        <button class="arrow" type="button" data-doctors-prev aria-label="Предыдущие врачи">&lt;</button>
+        <button class="arrow" type="button" data-doctors-next aria-label="Следующие врачи">&gt;</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- КОНТАКТЫ -->
+  <section class="contacts" id="contacts">
+    <div class="container">
+      <div class="contacts__box">
+        <div class="contacts__info">
+          <h2 class="contacts__title">Контакты</h2>
+          <p class="contacts__sub">Наш центр</p>
+          <ul class="contacts__list">
+            <li><a href="tel:+74957099669">+7 (495) 709-96-69</a></li>
+            <li>WhatsApp: <a href="https://wa.me/79265004350" target="_blank" rel="noopener">+7 (926) 500-43-50</a></li>
+            <li>г. Москва, ул. Хавская, д.1</li>
+            <li>Режим работы: с 10:00 до 22:00</li>
+          </ul>
+          <a href="#" class="btn btn--white contacts__btn">Записаться на консультацию</a>
+        </div>
+
+        <div class="contacts__map">
+          <iframe
+            src="https://yandex.ru/map-widget/v1/?ll=37.6164%2C55.7192&amp;z=16&amp;pt=37.6164%2C55.7192%2Cpm2rdm"
+            title="Карта: г. Москва, ул. Хавская, д.1"
+            loading="lazy"
+            allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container footer__inner">
+    <a href="#top" class="footer__logo" aria-label="Дентомир+">
+      <svg class="logo__svg"><use href="#i-logo"/></svg>
+    </a>
+
+    <nav class="footer__nav" aria-label="Навигация в подвале">
+      <p class="footer__nav-title">Навигация</p>
+      <a href="#doctors">Врачи</a>
+      <a href="#about">О клинике</a>
+      <a href="#promos">Рассрочка</a>
+      <a href="#works">Наши работы</a>
+      <a href="#reviews">Отзывы</a>
+      <a href="#prices">Стоимость</a>
+      <a href="#blog">Блог и статьи</a>
+    </nav>
+
+    <div class="footer__contacts">
+      <a class="footer__phone" href="tel:+74957099669">+7 (495) 709-96-69</a>
+      <a href="#contacts" class="btn btn--light footer__btn">Заказать звонок</a>
+      <p class="footer__hours">Режим работы: с 10:00 до 22:00</p>
+      <p class="footer__address">г. Москва, ул. Хавская, д.1</p>
+      <div class="socials">
+        <a class="social" href="#" aria-label="ВКонтакте"><svg><use href="#i-vk"/></svg></a>
+        <a class="social" href="#" aria-label="Telegram"><svg><use href="#i-tg"/></svg></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
